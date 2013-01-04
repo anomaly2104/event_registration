@@ -1,0 +1,77 @@
+#content{
+	background-color:#FAEBD7;
+	background-repeat:no-repeat;
+	background-position:top;
+	margin-top:20px;
+	text-align:center;
+}
+
+#main-content{
+	background-color:#FFFFFF;
+	border:medium;
+	text-align:center;
+	
+}
+
+#header{
+	font-size: 2.286em;
+	line-height: 1.167em;
+	text-align: center;
+	font-family: 'museo-1', Helvetica, serif;
+	margin-top:20px;
+}
+
+#footer {
+	text-align: center;
+	font-family: 'museo-1', Helvetica, serif;
+	margin-top:20px;
+}
+
+.sep-black{
+	height:10px;
+	background-color:#000000;
+}
+p{
+	text-align: center;
+	}
+h1 {
+	font-size: 1.4em;
+    color: #008000;
+}
+h3{
+	font-size: 0.9em;
+	color: #002FF0;
+}
+a {
+    color: #008000;
+}
+
+/* Table */
+th {
+    text-align: left;
+}
+td, th {
+    padding-right: 5px;
+}
+.buttonn{
+	text-align: center;
+}
+/* style form */
+form dt {
+    width: 100px;
+    display: block;
+	float: left;
+    clear: left;
+	text-align:center;
+	margin: 0 0 20px 500px;
+}
+form dd {
+    margin-left: 10;
+	float:left;
+	margin: 0 10px 20px 0;
+	text-align:center;
+    
+}
+form #submitbutton {
+    margin-left: 100px;
+}

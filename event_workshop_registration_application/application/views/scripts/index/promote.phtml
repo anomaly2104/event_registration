@@ -1,0 +1,51 @@
+<input type="submit" id="printb" onclick="window.print();" value="Print Invitation Card"/>
+
+<br>
+<div class="publish-topic">
+Send Invite Using E-Card:
+<?php
+	$message = "You Are Cordiallly Event for the following event: \n";
+	$message = $message . " Event Name: " . $this->escape($this->event['name']) . "\n";
+	$message = $message . " Event Type: " . $this->escape($this->event['type']) . "\n";
+	$message = $message . " About The Event: " . $this->escape($this->event['about']) . "\n";
+	$message = $message . " Date: " . $this->escape($this->event['dt']) . "\n";
+	$message = $message . " Time: " . $this->escape($this->event['tym']) . "\n";
+	$message = $message . " Event Venue: " . $this->escape($this->event['venue']) . "\n";
+	$message = $message . " Organizer of the Event: " . $this->escape($this->event['organizer']) . "\n";
+	$message = $message . " Contact Number: " . $this->escape($this->event['contactno']) . "\n";
+	$message = $message . " Contact Email: " . $this->escape($this->event['contactemail']) . "\n";
+	
+?>
+<form action="http://auditmailservice.appspot.com\custom" method="get">
+	<input type="hidden" name="subject" value = "Invitation for Event:  <?php echo $this->escape($this->event['name']); ?>  ">
+	<input type="hidden" name="message" value="<?php echo $message; ?>">
+	<input type="text" name="friend_email" placeholder="Enter A Valid Email Address">
+	<input type="submit" name="submitb" id="submitb" value="Send Email">
+</form>
+</div>
+<div id="content-heading">
+"<?php echo $this->escape($this->event['name']); ?>"
+</div>
+<div class="publish-value">
+(<?php echo $this->escape($this->event['type']); ?>)
+
+</div>
+<div class="publish-topic">
+About:
+</div>
+<div class="publish-value">
+<?php echo $this->escape($this->event['about']); ?>
+</div>
+
+<div class="publish-topic">
+Contact Details
+</div>
+<div class="publish-value">
+Mobile: <?php echo $this->escape($this->event['contactno']); ?><br>
+Email: <?php echo $this->escape($this->event['contactemail']); ?><br>
+</div>
+<br>
+
+<br>
+<br>
+<br>

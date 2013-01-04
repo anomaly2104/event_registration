@@ -1,0 +1,47 @@
+<div id="content-heading">
+"<?php echo $this->escape($this->event['name']); ?>"
+</div>
+<div class="publish-value">
+(<?php echo $this->escape($this->event['type']); ?>)
+</div>
+<div class="publish-topic">
+About:
+</div>
+<div class="publish-value">
+<?php echo $this->escape($this->event['about']); ?>
+</div>
+
+<div class="publish-topic">
+Date/Time:
+</div>
+<div class="publish-value">
+<?php echo $this->escape($this->event['dt']); ?>, 
+<?php echo $this->escape($this->event['tym']); ?>
+</div>
+
+<div class="publish-topic">
+Venue:
+</div>
+<div class="publish-value">
+<?php echo $this->escape($this->event['venue']); ?>
+</div>
+
+<div class="publish-topic">
+Organized By:
+</div>
+<div class="publish-value">
+<?php echo $this->escape($this->event['organizer']); ?>
+</div>
+
+<div class="publish-topic">
+Contact Details
+</div>
+<div class="publish-value">
+Mobile: <?php echo $this->escape($this->event['contactno']); ?><br>
+Email: <?php echo $this->escape($this->event['contactemail']); ?><br>
+</div>
+<br>
+<input type="button" onclick="window.print();" value="Print"/>
+<br>
+<br>
+<br>

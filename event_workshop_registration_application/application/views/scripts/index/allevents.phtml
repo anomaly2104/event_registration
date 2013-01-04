@@ -1,0 +1,35 @@
+
+<div id="content-heading">
+ALL REGISTERED EVENTS	
+</div>
+<br><table align="center" id="allevents-table">
+<tr >
+    <th>S. No.</th>
+    <th>Event Name</th>
+    <th>Event Type</th>
+    <th>Organizer</th>
+    <th>Venue</th>
+    <th>Date/Time</th>
+    <th>Links</th>
+</tr>
+<?php $i = 0;foreach($this->events as $event) : ?>
+<tr>
+    <td><?php $i++; echo $i; ?></td>
+    <td><?php echo $this->escape($event->name);?></td>
+    <td><?php echo $this->escape($event->type);?></td>
+    <td><?php echo $this->escape($event->organizer);?></td>
+    <td><?php echo $this->escape($event->venue);?></td>
+    <td><?php echo $this->escape($event->dt) ."/" . $this->escape($event->tym);?></td>
+    <td>
+        <a href="<?php echo $this->url(array('controller'=>'index', 'action'=>'edit', 'id'=>$event->id));?>">Edit</a>
+        <a href="<?php echo $this->url(array('controller'=>'index', 'action'=>'delete', 'id'=>$event->id));?>">Delete</a>
+	<a href="<?php echo $this->url(array('controller'=>'index', 'action'=>'publish', 'id'=>$event->id));?>">Publish</a>
+	<a href="<?php echo $this->url(array('controller'=>'index', 'action'=>'promote', 'id'=>$event->id));?>">Promote</a>
+    </td>
+</tr>
+<?php endforeach; ?>
+</table>
+</p>
+<br/>
+<br/>
+		<br/>

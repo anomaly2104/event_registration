@@ -1,0 +1,50 @@
+<html>
+<head>
+<?php
+	echo $this -> headTitle('CreEvent - An Event / Workshop Application');
+	echo $this -> headLink()->prependStylesheet( $this->baseUrl() . '/css/style.css' );	
+	echo $this -> headLink()->prependStylesheet($this->baseUrl().'/css/login-box.css.css'); 	
+?>
+</head>
+<body bgcolor="#FAEBD7">
+<div id="header">	
+	<table id="head-graphics" align="center">
+	<tr> 
+		<td> <div id="head_logo">  </div></td> 
+		<td> 
+	<div id="header-slogan">
+		Events/Workshop Registration System
+	</div>
+	       	
+		</td> 
+		<td> <div id="head_logo">  </div></td> 
+	</tr>
+	</table>
+
+<div class="sep-black"></div>
+<div id="menu">
+	<table id="menu-table" align="center">
+	<tr>
+		<td><a href="/">Home</a></td>
+		<td><a href="/index/create">Create Event</a></td>
+		<td><a href="/index/allevents">All Events</a></td>
+		<td><a href="/index/logout">Logout</a></td>
+	</tr>
+		
+	</table>
+</div> 
+<div class="sep-black"></div>
+</div>
+<div id="content">
+<br>
+
+<?php 
+	echo $this->layout()->content; 
+?>
+<br>
+</div>
+<div id="footer">
+Designed And Maintained by Udit Agarwal (IIIT Allahabad).
+</div>
+
+</body>

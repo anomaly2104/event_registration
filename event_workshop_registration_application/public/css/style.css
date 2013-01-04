@@ -1,0 +1,174 @@
+.submitb{
+	 padding: 5px 5px 5px 5px;
+	font-size:1.0em;
+	border-color:#55FF55;
+}
+#submitb{
+	 padding: 5px 5px 5px 5px;
+        font-size:.7em;
+        border-style:solid;
+        border-width:thin;
+        border-color:#5555FF;
+
+}
+
+#printb{
+	 padding: 5px 5px 5px 5px;
+	font-size:1.0em;
+	border-style:solid;
+	border-width:thin;
+	border-color:#5555FF;
+	
+}
+
+.publish-topic{
+	font-size:1.8em;
+	font-weight:bold;
+	padding-top:15px;
+}
+
+.publish-value{
+	font-size:1.4em;
+	padding-top:2px;
+}
+
+#allevents-table tr:nth-child(even) {background: #CCC}
+#allevents-table tr:nth-child(odd) {background: #FFF}
+	
+
+#allevents-table td, #allevents-table th{
+	padding:5px;
+}
+
+#allevents-table, #allevents-table td, #allevents-table th{
+	border:1px solid green;
+	font-size:1.1em;
+}
+
+#content-heading{
+	font-size:2.00 em;
+	font-stretch: ultra-expanded;
+	font-weight: bold;
+	text-decoration:underline;
+}
+#content{
+	background-color:#FAEBD7;
+	text-align:center;
+}
+
+#header-slogan{
+	background-color:#CC5555;
+	font-size: 4.486em;
+	text-align: center;
+	line-height: 1.167em;
+	font-family: 'museo-1', Helvetica, serif;
+	padding:20px;	
+}
+#head-graphics{
+	background-color:#CC5555;
+	width:100%;
+}
+#head_logo{
+	background-image:url('./images/head-logo.png');
+	background-repeat:no-repeat;
+	background-position:top;
+	height:100px;
+	width:300px;
+}
+#head_image{
+	background-image:url('./images/head-image.jpg');
+	background-repeat:no-repeat;
+	background-position:top;
+	height:200px;
+	width:800px;
+}
+
+#menu{
+	background-color:#FFFFFF;
+}
+
+#menu-table{
+	font-size: 1.34em;
+	border-spacing:4px;
+	color:#000000;
+	
+}
+#menu-table td{ /* default link color */
+	     background-color: #ffffff;
+		color:#000000;
+	     text-align:center;
+             padding:5px;
+		font-weight:5px;
+	     
+}
+#menu-table td:hover { /* change to blue on mouseover */
+	     background-color: #AAAAAA;
+	font-weight:5px;
+		color:#000000;
+}
+
+#footer {
+	color:#000000;
+	text-align: right;
+	font-family: 'museo-1', Helvetica, serif;
+	position:fixed;
+	bottom:0px;
+        right:10px;
+	width:100%;
+}
+
+.sep-black{
+	height:10px;
+	background-color:#000000;
+}
+#content p{
+	text-align: center;
+	}
+#content h1 {
+	font-size: 1.4em;
+    color: #008000;
+}
+#content h3{
+	font-size: 0.9em;
+	color: #002FF0;
+}
+a {
+    color: #000000;
+}
+
+/* Table */
+#content th {
+    text-align: left;
+}
+#content td, th {
+    padding-right: 5px;
+}
+#content .buttonn{
+	text-align: center;
+}
+/* style form */
+#content form dt {
+    width: 100px;
+    display: block;
+	float: left;
+    clear: left;
+	text-align:center;
+	margin: 0 0 20px 500px;
+}
+#content form dd {
+    margin-left: 10;
+	float:left;
+	margin: 0 10px 20px 0;
+	text-align:center;
+    
+}
+#content form #submitbutton {
+    margin-left: 100px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 500;
+	   border-style:solid;
+	           border-width:thin;
+		           border-color:#FF5555;
+}
